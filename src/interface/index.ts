@@ -1,9 +1,9 @@
 export interface Option {
   info: boolean;
   template: string;
-  runInstall: boolean;
+  // runInstall: boolean;
   targetDirectory: string;
   templateDirectory: string;
-  useYarn: boolean;
+  // useYarn: boolean;
   verbose: boolean;
 }

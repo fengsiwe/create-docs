@@ -19,8 +19,7 @@ export function arg() {
     .on('--help', () => {
       console.log(`${chalk.green('<project-directory>')} is required`);
       console.log();
-      console.log(`    template ${chalk.cyan('--template')} :`);
-      console.log(`      - vite+react+ts+antd: ${chalk.green('vite-react-typescript')}`);
+      // console.log(`    template ${chalk.cyan('--template')} :`);
     })
     .parse(process.argv);
 

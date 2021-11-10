@@ -2,7 +2,7 @@ import inquirer from 'inquirer';
 import { Command } from 'commander';
 import chalk from 'chalk';
 
-import { defaultTemplate, templates } from '../config';
+import {  templates } from '../config';
 import { infoService, optionService } from '../service';
 
 export async function questions(args: Command): Promise<void> {
@@ -14,7 +14,6 @@ export async function questions(args: Command): Promise<void> {
       name: 'template',
       message: 'Please choose which project template to use ?',
       choices: Object.keys(templates),
-      default: defaultTemplate,
     });
   } else {
     infoService.question('Please choose which project template to use', template);

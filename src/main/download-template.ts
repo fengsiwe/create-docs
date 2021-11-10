@@ -39,6 +39,7 @@ export const downloadTemplate = async () => {
 };
 
 export const downloadFromGit = (url: string, target: string) => {
+  console.log(url);
   return new Promise((resolve, reject) => {
     download(url, target, { clone: true }, (err: Error) => {
       if (err) {

@@ -15,7 +15,7 @@ export const postInstall = async () => {
     return;
   } catch (e) {
     deleteDirectory();
-    process.exit(1);
+   // process.exit(1);
     return Promise.reject(new Error(`Failed to exec ${command} ${args.join(' ')}`));
   }
 };

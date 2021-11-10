@@ -17,11 +17,6 @@ export const task = async () => {
       title: 'Init Git',
       task: () => initGit(),
     },
-    {
-      title: 'Install DevDependence',
-      task: () => postInstall(),
-      enabled: () => option.runInstall,
-    },
   ]);
   await tasks.run();
 };
